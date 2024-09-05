@@ -13,14 +13,12 @@ namespace DescontoProduto
             double precoProduto = double.Parse(Console.ReadLine());
             Console.WriteLine("Informe a quantidade do produto:");
             int quantidadeProduto = int.Parse(Console.ReadLine());
-
             double desconto = CalcularDesconto(quantidadeProduto);
 
             Produto produto = new Produto(nomeProduto, precoProduto, quantidadeProduto);
 
             double precoTotal = produto.CalcularPrecoTotal(desconto);
             double valorDesconto = produto.CalcularDesconto(precoProduto * quantidadeProduto, precoTotal);
-
             Console.WriteLine(sep);
             Console.WriteLine($"Valor total: {precoTotal.ToString("C")}");
             Console.WriteLine(sep);
