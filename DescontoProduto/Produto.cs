@@ -2,27 +2,9 @@
 {
     class Produto
     {
-        private string _nome;
-        private double _precoOriginal;
-        private int _quantidade;
-
-        public string Nome
-        {
-            get { return _nome; }
-            set { _nome = value; }
-        }
-
-        public double PrecoOriginal
-        {
-            get { return _precoOriginal; }
-            set { _precoOriginal = value; }
-        }
-
-        public int Quantidade
-        {
-            get { return _quantidade; }
-            set { _quantidade = value; }
-        }
+        public string Nome { get; set; }
+        public double PrecoOriginal { get; set; }
+        public int Quantidade { get; set; }
 
         public Produto(string nome, double preco, int quantidade)
         {
